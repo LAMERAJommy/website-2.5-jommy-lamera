@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetCare - Tutorial</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            max-width: 100%;
+            height: 315px;
+            flex: 1 1 45%; /* Ensures two videos per row on larger screens */
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .video-container iframe {
+                flex: 1 1 100%; /* Stacks videos on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NetCare</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Contacts.html">Contacts</a>
+            <a href="Tutorial.html">Tutorial</a>
+            <a href="Tips and tricks.html">Tips & Tricks</a>
+            <a href="About us.html">About Us</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Improve Your Network</h2>
+        <p>Watch the tutorial video below to learn how to optimize your network for better performance.</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mJnIgjyjEtc?si=AU79IG5NqcqpdFHg" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/O_rBT3tz5i4?si=6IQwVCJQMNMyaJnZ" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1lkAUaEWLXI?si=XiLfQEBjW2NG_7Pk" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lfBRmBUAVr8?si=Obx2oQPn6lOBrMZ_" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 NetCare. All rights reserved.</p>
+    </footer>
+</body>
+</html>
